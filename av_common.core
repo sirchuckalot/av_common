@@ -1,0 +1,14 @@
+CAPI=2:
+
+name : ::av_common:1.0
+
+filesets:
+  common:
+    files:
+      - av_common_params.v : {is_include_file : true}
+      - av_common.v : {is_include_file : true}
+    file_type : verilogSource
+
+targets:
+  default:
+    filesets : [common]
